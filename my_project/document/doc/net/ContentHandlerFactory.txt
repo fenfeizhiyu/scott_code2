@@ -1,0 +1,6 @@
+public interface ContentHandlerFactory
+This interface defines a factory for content handlers. An implementation of this interface should map a MIME type into an instance of ContentHandler.
+This interface is used by the URLStreamHandler class to create a ContentHandler for a MIME type.
+
+ContentHandler实例工厂.
+为不同的MIME类型创建一个ContentHandler实例.
