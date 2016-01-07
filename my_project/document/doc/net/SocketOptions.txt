@@ -1,0 +1,4 @@
+public interface SocketOptions
+Interface of methods to get/set socket options. This interface is implemented by: SocketImpl and DatagramSocketImpl. Subclasses of these should override the methods of this interface in order to support their own options.
+The methods and constants which specify options in this interface are for implementation only. If you're not subclassing SocketImpl or DatagramSocketImpl, you won't use these directly. There are type-safe methods to get/set each of these options in Socket, ServerSocket,
+ DatagramSocket and MulticastSocket.

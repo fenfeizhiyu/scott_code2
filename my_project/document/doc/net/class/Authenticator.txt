@@ -1,0 +1,14 @@
+The class Authenticator represents an object that knows how to obtain authentication for a network connection. Usually, it will do this by prompting the user for information.
+Applications use this class by overriding getPasswordAuthentication() in a sub-class. This method will typically use the various getXXX() accessor methods to get information about the entity requesting authentication. It must then acquire a username and password either by interacting with the user or through some other non-interactive means. The credentials are then returned as a PasswordAuthentication return value.
+
+An instance of this concrete sub-class is then registered with the system by calling setDefault(Authenticator). When authentication is required, the system will invoke one of the requestPasswordAuthentication() methods which in turn will call the getPasswordAuthentication() method of the registered object.
+
+All methods that request authentication have a default implementation that fails.
+
+Authenticator 类表示懂得如何获得网络连接验证的对象。通常，它通过提示用户输入信息来完成此操作。
+
+应用程序通过重写子类中的 getPasswordAuthentication() 使用此类。此方法通常使用各种 getXXX() 访问器方法获取关于请求验证的实体的信息。然后，它必须通过与用户交互或者某些其他非交互手段获取用户名和密码。之后凭据将以 PasswordAuthentication 返回值的形式返回。
+
+接下来通过调用 setDefault(Authenticator) 向系统注册此具体子类的实例。需要进行验证时，系统将调用其中一个 requestPasswordAuthentication() 方法，这些方法将依次调用注册对象的 getPasswordAuthentication() 方法。
+
+请求验证的所有方法都有一个失败的默认实现。

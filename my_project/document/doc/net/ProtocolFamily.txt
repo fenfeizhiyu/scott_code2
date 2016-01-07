@@ -1,0 +1,2 @@
+public interface ProtocolFamily
+Represents a family of communication protocols.

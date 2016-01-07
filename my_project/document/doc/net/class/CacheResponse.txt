@@ -1,0 +1,5 @@
+Represent channels for retrieving resources from the ResponseCache. Instances of such a class provide an InputStream that returns the entity body, and also a getHeaders() method 
+which returns the associated response headers.
+
+
+表示从 ResponseCache 获取资源的通道。这种类的实例提供返回实体正文的 InputStream，同时提供一个返回关联响应头的 getHeaders() 方法。
