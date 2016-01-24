@@ -11,7 +11,7 @@ public class FileSource {
 	private File srcFileDir=null;
 	
 
-	FileSource(String path)
+	public FileSource(String path)
 	{
 		this.basePath=path;
 		init();
@@ -83,7 +83,7 @@ public class FileSource {
 					break;
 				}else
 				{
-					sb.append(s);
+					sb.append(s+"\n");
 				}
 			}
 			
