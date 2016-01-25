@@ -1,0 +1,14 @@
+Represents channels for storing resources in the ResponseCache. 
+Instances of such a class provide an OutputStream object which is called by protocol handlers to store the resource data into the cache, and also an abort() method which allows a cache store operation to be interrupted and abandoned. If an IOException is encountered while reading the response or writing to the cache, 
+the current cache store operation will be aborted.
+
+
+类 CacheRequest
+
+java.lang.Object
+  继承者 java.net.CacheRequest
+public abstract class CacheRequest
+extends Object
+表示在 ResponseCache 中存储资源的通道。这种类的实例提供一个 OutputStream 对象，协议处理程序可以调用该对象来将资源数据存储到缓存中；另外还提供一个 abort() 方法，该方法允许中断和放弃缓存存储操作。如果从缓存读取响应或将响应写入缓存时遇到 IOException，则将中止当前缓存存储操作。
+
+从以下版本开始：

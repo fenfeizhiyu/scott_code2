@@ -1,0 +1,2 @@
+public interface DatagramSocketImplFactory
+This interface defines a factory for datagram socket implementations. It is used by the classes DatagramSocket to create actual socket implementations.
