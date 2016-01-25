@@ -41,7 +41,7 @@ public class ParseMain {
 		//System.out.println(fs.readFileString(fps[0]).toCharArray());
 		parser.setSource(fs.readFileString(fps[1]).toCharArray());
 		parser.setKind(ASTParser.K_COMPILATION_UNIT);
-		
+	
 		CompilationUnit result = (CompilationUnit) parser.createAST(null);
 		result.accept(new NodeVisitor());
 		//System.out.println(result);
