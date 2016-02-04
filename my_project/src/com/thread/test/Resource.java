@@ -2,7 +2,7 @@ package com.thread.test;
 
 public class Resource {
 
-	public static int calc=0;
+	private volatile static int calc=0;
 	
 	
 	public static void addCalc()

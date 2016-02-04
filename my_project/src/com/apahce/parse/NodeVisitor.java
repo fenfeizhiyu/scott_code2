@@ -11,7 +11,8 @@ public class NodeVisitor extends ASTVisitor{
 	@Override
 	public boolean visit(MethodDeclaration node) {
 		// TODO Auto-generated method stub
-		System.out.println(node.getName());
+		System.out.println(node.getReturnType2()+":"+node.getName());
+		
 		return super.visit(node);
 	}
 

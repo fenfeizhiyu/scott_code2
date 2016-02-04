@@ -5,7 +5,17 @@ public class Test1 extends Thread{
 	public void run() {
 		// TODO Auto-generated method stub
 		
-		super.run();
+		while(true)
+		{
+			Resource.addCalc();
+			super.run();
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 
 	
