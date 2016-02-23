@@ -25,6 +25,9 @@ public class TestThreads {
 	 */
 	public Thread getThread(int index)
 	{
-		return thds[index-1];
+		if(index>=1&&index<=thds.length)
+			return thds[index-1];
+		else
+			return null;
 	}
 }

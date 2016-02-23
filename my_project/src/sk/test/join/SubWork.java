@@ -3,7 +3,7 @@ package sk.test.join;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SubWork implements WorkRunnable{
+public class SubWork implements ShareSpace{
 
 	List<Integer> result=new ArrayList<Integer>();
 	@Override
@@ -15,9 +15,9 @@ public class SubWork implements WorkRunnable{
 			sr.desc(1);
 		}
 		try {
+			//线程等待直到被唤醒
 			Thread.currentThread().wait();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		for(Integer res:result)

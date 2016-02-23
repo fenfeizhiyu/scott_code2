@@ -1,6 +1,6 @@
 package sk.test.join;
 
-public class MainWork implements WorkRunnable{
+public class MainWork implements ShareSpace{
 
 	
 	@Override
@@ -13,7 +13,7 @@ public class MainWork implements WorkRunnable{
 		}
 	}
 
-	public boolean doCheck()
+	private boolean doCheck()
 	{
 		if(sr.getTotal()>0)
 			return true;
