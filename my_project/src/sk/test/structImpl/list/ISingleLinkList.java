@@ -1,4 +1,4 @@
-package sk.test.structImpl;
+package sk.test.structImpl.list;
 
 import java.util.Iterator;
 
