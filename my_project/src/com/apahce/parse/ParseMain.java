@@ -30,7 +30,7 @@ public class ParseMain {
 		try
 		{
 		FileSource fs=new FileSource("D:\\log\\code");
-		String[] fps=fs.getFilesPath();
+		//String[] fps=fs.getFilesPath();
 		Map<String, String> compilerOptions = JavaCore.getOptions();
 		 compilerOptions.put(JavaCore.COMPILER_COMPLIANCE, JavaCore.VERSION_1_7); //设置Java语言版本
 		 compilerOptions.put(JavaCore.COMPILER_CODEGEN_TARGET_PLATFORM, JavaCore.VERSION_1_7);
@@ -39,7 +39,7 @@ public class ParseMain {
 		
 		parser.setCompilerOptions(compilerOptions);
 		//System.out.println(fs.readFileString(fps[0]).toCharArray());
-		parser.setSource(fs.readFileString(fps[1]).toCharArray());
+		//parser.setSource(fs.readFileString(fps[1]).toCharArray());
 		parser.setKind(ASTParser.K_COMPILATION_UNIT);
 	
 		CompilationUnit result = (CompilationUnit) parser.createAST(null);
