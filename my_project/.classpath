@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="document/doc/javaparser-1.0.8.jar"/>
 	<classpathentry kind="lib" path="document/ast/ast/org.eclipse.core.contenttype_3.4.200.v20130326-1255.jar"/>
 	<classpathentry kind="lib" path="document/ast/ast/org.eclipse.core.filesystem_1.4.0.v20130514-1240.jar"/>
@@ -17,5 +21,16 @@
 	<classpathentry kind="lib" path="document/ast/ast/org.eclipse.jdt.core_3.9.1.v20130905-0837.jar" sourcepath="document/doc/source/org.eclipse.jdt.core.source_3.10.2.v20150120-1634 (1).jar"/>
 	<classpathentry kind="lib" path="document/ast/ast/org.eclipse.osgi_3.8.0.v20120529-1548.jar"/>
 	<classpathentry kind="lib" path="document/doc/lib/commons-io-2.4.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="lib" path="document/lib/asm-3.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>
